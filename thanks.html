@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanks - Hafsa & Waqar</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script:wght=700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND */
+.bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(3px); /* light blur */
+    z-index: -1;
+    animation: shake 2s infinite alternate; /* minor shake */
+}
+
+@keyframes shake {
+    0% { transform: translate(0px,0px); }
+    25% { transform: translate(1px,1px); }
+    50% { transform: translate(-1px,1px); }
+    75% { transform: translate(1px,-1px); }
+    100% { transform: translate(0px,0px); }
+}
+
+/* SECTIONS */
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #5c3a2e;
+    position: relative;
+    text-align: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+/* HEADINGS WITH BORDER */
+.heading-border {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 3px solid #b85c38;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.9);
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    margin-bottom: 30px;
+}
+
+/* DUAS BOX */
+.dua-box {
+    border: 3px solid #b85c38;
+    border-radius: 20px;
+    padding: 25px 30px;
+    background-color: rgba(255,255,255,0.95);
+    text-align: right;
+    max-width: 650px;
+    box-shadow: 0 10px 25px rgba(184,92,56,0.3);
+    margin-bottom: 40px;
+}
+.dua-box p { margin: 10px 0; font-size: 1.1em; }
+.dua-translation { text-align: left; font-size: 1em; color: #4b3a36; margin-left: 10px; }
+
+/* THANK YOU SECTION */
+#section2 h1 { 
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3em; 
+    margin-bottom: 15px; 
+    padding: 10px 25px; 
+    border: 3px solid #b85c38; 
+    border-radius: 50px; 
+    background-color: rgba(255,255,255,0.9);
+    transform: translateY(-50px); /* move slightly up */
+}
+
+/* THANK YOU TEXT */
+#section2 p { font-size: 1.2em; margin-bottom: 25px; color: #5c3a2e; }
+
+/* BRIDE & GROOM NAME */
+#section2 .couple-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.3em; /* slightly bigger */
+    margin-top: 20px;
+    margin-bottom: 40px; /* space before home button */
+    color: #b85c38;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* HOME BUTTON */
+.home-button {
+    display: inline-block;
+    background-color: #b85c38;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.home-button:hover {
+    background-color: #7a3e25;
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg"></div>
+
+<!-- FIRST SECTION -->
+<section id="section1">
+    <div class="heading-border">Blessings for Couple</div>
+    <div class="dua-box">
+        <p>اللَّهُمَّ اجمع بينهما بالخير واهدِهما لما تحب و ترضى</p>
+        <p class="dua-translation">“O Allah! Unite them in goodness and guide them to what You love and are pleased with.”</p>
+
+        <p>اللَّهُمَّ اجعل له زَوْجًا صَالِحًا</p>
+        <p class="dua-translation">“O Allah! Grant him a righteous spouse.”</p>
+
+        <p>اللَّهُمَّ اجعل لها زَوْجًا صَالِحًا</p>
+        <p class="dua-translation">“O Allah! Grant her a righteous spouse.”</p>
+
+        <p>وَبَارِكْ لَهُمَا فِي زَوَاجِهِمَا</p>
+        <p class="dua-translation">“And bless them in their marriage.”</p>
+    </div>
+</section>
+
+<!-- SECOND SECTION -->
+<section id="section2">
+    <h1>Thank You!</h1>
+    <p>"We are truly grateful for your time, prayers, and blessings. Your presence makes this day even more special, and we will always cherish it in our hearts."</p>
+    <div class="couple-name">HAFSA  & ALI </div>
+    <a href="index.html" class="home-button"><i class="fas fa-home"></i> Go Back to Home</a>
+</section>
+
+</body>
+</html>
